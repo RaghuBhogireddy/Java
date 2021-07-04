@@ -1,8 +1,8 @@
-package main.java.com.codr;
+package main.java.com.codr.searching;
 
 import java.util.Arrays;
 
-public class Runnable {
+public class Search {
     public static void main(String[] args) {
         int array[] = {12,15,82,43,65,23,87,29};
         int length = array.length;
