@@ -4,10 +4,6 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Check Module Setup");
 
-        System.out.println("char");
-        System.out.println(Character.MAX_VALUE);
-        System.out.println(Character.MIN_VALUE);
-
         System.out.println("short");
         System.out.println(Short.MAX_VALUE);
         System.out.println(Short.MIN_VALUE);
