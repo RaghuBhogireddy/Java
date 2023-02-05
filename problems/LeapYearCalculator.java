@@ -1,5 +1,3 @@
-package io.codr.problems;
-
 public class LeapYearCalculator {
     public static void main(String[] args){
         boolean isLeapYear = isLeapYear(366);

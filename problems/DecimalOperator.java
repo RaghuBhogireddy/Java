@@ -1,5 +1,3 @@
-package io.codr.problems;
-
 public class DecimalOperator {
     public static void main(String[] args){
         System.out.println(areEqualByThreeDecimalPlaces(-3.1756, -3.175));

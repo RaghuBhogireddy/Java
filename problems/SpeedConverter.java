@@ -1,5 +1,3 @@
-package io.codr.problems;
-
 public class SpeedConverter {
     public static void main(String[] args){
         printConversion(95.75);

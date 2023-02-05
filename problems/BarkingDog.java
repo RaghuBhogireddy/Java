@@ -1,5 +1,3 @@
-package io.codr.problems;
-
 public class BarkingDog {
     public static void main(String[] args){
         boolean shouldWakeUp = shouldWakeUp(true, -1);

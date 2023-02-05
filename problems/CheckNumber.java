@@ -1,5 +1,3 @@
-package io.codr.problems;
-
 public class CheckNumber {
     public static void main(String[] args){
         checkNumber(-3);
