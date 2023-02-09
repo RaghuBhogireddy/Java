@@ -11,12 +11,15 @@ public class SecondsAndMinutes {
             return "inValid data fort the seconds(" + seconds + ")," +
                     "must be positive integer value ";
         }
+        System.out.println(seconds);
+        System.out.println(seconds / 60);
+        System.out.println(seconds % 60);
         return getDuration(seconds / 60, seconds % 60) ;
     }
 
     public static String getDuration(int minutes, int seconds){
         if (minutes < 0){
-            return "inValid data fort the minutes(" + minutes + ")," +
+            return "inValid data for the minutes(" + minutes + ")," +
                     "must be positive integer value ";
         }
         if (seconds <= 0 || seconds >= 59 ){
