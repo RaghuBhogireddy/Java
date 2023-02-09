@@ -33,7 +33,7 @@ public class SwitchStatments {
         };
     }
 
-    private static void traditionalSwitchStatement(int value) {
+    private static void traditioxnalSwitchStatement(int value) {
         switch(value){
             case 1, 2, 3:
                 System.out.println("the value got: " + value);
