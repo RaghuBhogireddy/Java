@@ -71,4 +71,20 @@ public class Account {
                 ", balance=" + balance +
                 '}';
     }
+
+    public void depositFunds(double amount){
+        balance += amount;
+        System.out.println("Deposit of Rs." + amount + "made. New Balance Rs."
+        + balance);
+    }
+
+    public void withdrawFunds(double amount){
+        if (balance - amount < 0){
+            System.out.println("Can't withdraw amount as balance is low, Current balance Rs." + balance);
+        }else {
+            balance -= amount;
+            System.out.println("Withdrawal successful! new Balance Rs." + balance);
+        }
+    }
+
 }

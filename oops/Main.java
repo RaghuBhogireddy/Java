@@ -10,5 +10,10 @@ public class Main {
                 "test@gmail.com", "545452252455");
 
         System.out.println(sbi.toString());
+        sbi.withdrawFunds(20000);
+        System.out.println(sbi.toString());
+        sbi.withdrawFunds(4325);
+        sbi.withdrawFunds(4324);
+        System.out.println(sbi.toString());
     }
 }

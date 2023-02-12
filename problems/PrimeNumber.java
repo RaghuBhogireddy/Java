@@ -2,7 +2,7 @@
 
 public class PrimeNumber {
     public static void main(String[] args) {
-        int number = 1031;
+        int number = 225;
         System.out.println("The number is Prime (naivePrimeLogic): " + naivePrimeLogic(number));
         System.out.println("The number is Prime (efficientPrimeLogic): " + efficientPrimeLogic(number));
         System.out.println("The number is Prime (moreEfficientPrimeLogic): " + moreEfficientPrimeLogic(number));
