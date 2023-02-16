@@ -95,4 +95,4 @@
   - to use instance method, we need to create an instance of the class using new keyword
   - instance methods can access instance methods and variables directly
   - instance methods can access static methods and variables directly
-  - 
+
