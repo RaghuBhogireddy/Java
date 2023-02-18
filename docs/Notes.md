@@ -3,7 +3,7 @@
 -   We can also consider as a blueprint and from which we can create objects
 - A Class member can be a field  or a method or some type of dependent element
 - If a field is static, there is only one copy in the memory and the value is associate with the class or template it self
-- If a field is non static, it is instance field and and each object have different value stored in this field
+- If a field is non-static, it is instance field and and each object have different value stored in this field
 - A Static method can't depend on any object state, so it can't be referenced by any instance members
 - A methods that operated on instance fields, should be non-static
 
@@ -83,7 +83,7 @@
   - instance variable belong to specific instance of a class
   - every instance have it's own copy of instance variable
   - instance variable represent state, of specific instance of a class
-  - 
+  
 ### Static vs instance methods
 - Static methods
   - methods are declared using static modifier
@@ -95,4 +95,13 @@
   - to use instance method, we need to create an instance of the class using new keyword
   - instance methods can access instance methods and variables directly
   - instance methods can access static methods and variables directly
+
+### Record
+- Record was introduced in JDK 14 and officially part of JDK 16
+  - Purpose is to reduce the boilerplate of the POJO, but to be more restrictive
+  - The record is special class that contains data, that's not meant to be altered
+  - It seeks to achieve immutability, for data in its members.
+  - `public record student(type param1, type param2 ...){}`
+  - It generates the toString() method for the object also. 
+  - Unlike usual POJO, these don't have any prefix to data filed accessors like `get` or `set`
 
