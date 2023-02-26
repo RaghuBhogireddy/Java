@@ -105,3 +105,29 @@
   - It generates the toString() method for the object also. 
   - Unlike usual POJO, these don't have any prefix to data filed accessors like `get` or `set`
 
+### Formatting Options
+- #### Text Block
+  - Is a special form of multi-line String laterals. Ex., `""" something ... """`
+  - Some common Escape Sequences <br>
+    | **Escape Sequence**      | **Description**  |
+    | ----------- | ----------------------------- |
+    | \t      | Insert a tab character            |
+    | \n      | Insert a new line character       |
+    | \"      | Insert a double quote character   |
+    | \\      | Insert a back slash character     |
+  - Like `println()` in `System.out` we have some other methods to format the output
+    - `printf()` is one such format method which use format specifier to store values
+      - Most common are `%d - deciaml, %f - floating, %c - character, %s - String and %n - new line specifier like \n`
+      - we can alter the output of the values by specifying the requirements like below
+        - `%.2d - output decimal with two values after space`
+        - `%6d - output decimal that fill up 6 places `
+  - We have one more formatting option on the String literals. 
+    - `"something... %d".format(varaible)`
+    - we can write above as this also -> `String.format("Something ... %d", variable)`
+
+### String
+- String is sequence of character means, character's ordered and indexed. 
+- String has over 60 methods available and we can split String methods up into three basic categories
+  - String inspection methods, like `length, charAt, indexOf, lastIndexOf, isEmpty, isBlank etc`
+  - Methods for comparing String values, like `contentEquals, equals, equalsIgnoreCase, contains, startsWith, endsWith, regionMatches`
+  - String manipulation methods
