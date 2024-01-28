@@ -69,4 +69,33 @@ public class RoomService {
         copy.removeIf(r -> !r.getType().equals(type));
         return copy;
     }
+
+    public void applyDiscount(final double discount) {
+
+        //Reduces the rate of each room by the provided discount
+        this.inventory.forEach(room -> room.setRate(room.getRate() * (1 - discount)));
+
+    }
+
+    public Collection<Room> getRoomsByCapacity(final int requiredCapacity) {
+
+        //Returns a new collection of rooms that meet or exceed the provided capacity
+        Collection<Room> matches = new HashSet<>();
+        for (Room room : this.inventory) {
+            if (room.getCapacity() >= requiredCapacity)
+                matches.add(room);
+        }
+        return matches;
+
+    }
+
+    public Collection<Room> getRoomByRateAndType(final double rate, final String type){
+
+        //Returns a new collection of rooms with a rate below the provided rate and that match the provided type
+        return this.inventory.stream()
+                .filter(room -> room.getRate() < rate)
+                .filter(room -> room.getType().equals(type))
+                .toList();
+
+    }
 }
